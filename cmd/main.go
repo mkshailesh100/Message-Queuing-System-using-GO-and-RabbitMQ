@@ -34,5 +34,4 @@ func main() {
 	if err != nil {
 		log.Fatal(fmt.Errorf("failed to start server: %w", err))
 	}
-	// Start your application logic here
 }

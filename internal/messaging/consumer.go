@@ -80,7 +80,6 @@ func ConsumeProductID() {
             }
 			log.Println("image3 is ",result)
 			log.Println("image1 is ",product)
-            // Download and compress the product images
 			imagesArray := strings.Split(product.ProductImages, ",")
 
 			// Remove leading/trailing whitespaces from each element
@@ -102,8 +101,6 @@ func ConsumeProductID() {
             if result.Error != nil {
                 log.Println("Failed to update product in the database:", result.Error)
             }
-
-            // dbConn.Close()
         }
     }
 }

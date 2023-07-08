@@ -57,8 +57,6 @@ func DownloadAndCompressImages(imageURLs[] string) ([]string, error) {
 
         // Compress the image
         compressedData := resize.Resize(200, 0, imgData, resize.Lanczos3)
-		// Generate a timestamp string
-		 // Format: YYYYMMDDHHmmss
 
 		// Create a new file for the compressed image with timestamp
 		compressedPath := filepath.Join("compressedImages", "compressed_"+imageName)

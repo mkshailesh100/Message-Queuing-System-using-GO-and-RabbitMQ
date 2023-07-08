@@ -4,7 +4,6 @@ import (
 	"github.com/mkshailesh100/message-queue-system/pkg/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	// "gorm.io/gorm/logger"
 )
 
 func ConnectDB() (*gorm.DB, error) {

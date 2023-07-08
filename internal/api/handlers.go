@@ -8,7 +8,6 @@ import (
 	"github.com/mkshailesh100/message-queue-system/internal/db"
 	"github.com/mkshailesh100/message-queue-system/internal/messaging"
 	"github.com/mkshailesh100/message-queue-system/pkg/models"
-	// "github.com/mkshailesh100/message-queue-system/pkg/models"
 )
 type Product struct {
 	ID					uint 	`json:"id"`
@@ -34,13 +33,12 @@ func CreateProduct(c *gin.Context) {
     }
 
     // Create a new product record in the database
-    // You can modify this code to match your database schema and table structure
     newProduct := models.Product{
 		ID:					product.ID,
         UserID:             product.UserID,
         ProductName:        product.ProductName,
         ProductDescription: product.ProductDescription,
-        ProductImages:      product.ProductImages, // Updated field name
+        ProductImages:      product.ProductImages, 
         ProductPrice:       product.ProductPrice,
     }
     if err := db.Create(&newProduct).Error; err != nil {
