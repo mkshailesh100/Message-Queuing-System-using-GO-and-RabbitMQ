@@ -1,7 +1,8 @@
 # Message-Queuing-System
 Approach
 Flow Diagram:
-![image](https://github.com/mkshailesh100/Message-Queuing-System/assets/59009436/30e67527-a518-4357-bdc6-8b4624a2a5f4)
+![image](https://github.com/mkshailesh100/Message-Queuing-System/assets/59009436/cce9c903-e6c4-4983-a21d-83a951befcdc)
+
 
 
 Explanation:
