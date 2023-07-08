@@ -16,7 +16,6 @@ func DownloadAndCompressImages(imageURLs[] string) ([]string, error) {
 
     for _, imageURL := range imageURLs {
         // Download the image
-		log.Println("Image URL is ",imageURL)
         response, err := http.Get(imageURL)
         if err != nil {
             log.Println("Failed to download image:", err)
@@ -76,6 +75,7 @@ func DownloadAndCompressImages(imageURLs[] string) ([]string, error) {
 
         // Append the compressed image path to the list
         compressedPaths = append(compressedPaths, compressedPath)
+        log.Println("Compressed Image path successfully added to Database")
     }
 
     return compressedPaths, nil

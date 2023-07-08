@@ -78,15 +78,12 @@ func ConsumeProductID() {
                 log.Println("Failed to fetch product from the database:", result.Error)
                 continue
             }
-			log.Println("image3 is ",result)
-			log.Println("image1 is ",product)
 			imagesArray := strings.Split(product.ProductImages, ",")
 
 			// Remove leading/trailing whitespaces from each element
 			for i := 0; i < len(imagesArray); i++ {
 				imagesArray[i] = strings.TrimSpace(imagesArray[i])
 			}
-			log.Println("image2 is ",imagesArray)
 			
             compressedPaths, err := compression.DownloadAndCompressImages(imagesArray)
             if err != nil {

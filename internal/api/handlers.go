@@ -47,6 +47,8 @@ func CreateProduct(c *gin.Context) {
         return
     }
 
+
+    go messaging.ConsumeProductID()    //starting goroutine for consumer
     // Publish the product ID to the message queue
     log.Println("Product details:", newProduct)
     err = messaging.PublishProductID(int(newProduct.ID))
@@ -58,7 +60,5 @@ func CreateProduct(c *gin.Context) {
 
     // Return a success response
     c.JSON(http.StatusOK, gin.H{"message": "Product created successfully"})
-
-	go messaging.ConsumeProductID()
 	
 }
