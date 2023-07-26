@@ -1,7 +1,8 @@
 # Message-Queuing-System
 Approach
 Flow Diagram:
-![image](https://github.com/mkshailesh100/Message-Queuing-System/assets/59009436/cce9c903-e6c4-4983-a21d-83a951befcdc)
+<img width="660" alt="Screenshot 2023-07-26 at 1 59 34 PM" src="https://github.com/mkshailesh100/Message-Queuing-System-using-GO-and-RabbitMQ/assets/59009436/9c131340-bb57-44fb-899c-30cf9750c890">
+
 
 
 
