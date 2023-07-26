@@ -1,10 +1,7 @@
 # Message-Queuing-System
 Approach
 Flow Diagram:
-<img width="660" alt="Screenshot 2023-07-26 at 1 59 34 PM" src="https://github.com/mkshailesh100/Message-Queuing-System-using-GO-and-RabbitMQ/assets/59009436/9c131340-bb57-44fb-899c-30cf9750c890">
-
-
-
+<img width="700" alt="Screenshot 2023-07-26 at 2 03 01 PM" src="https://github.com/mkshailesh100/Message-Queuing-System-using-GO-and-RabbitMQ/assets/59009436/8013e63d-17da-4cc8-82b2-32341c6cf7b4">
 
 Explanation:
 We have created an API which will take following parameters as input- user_id, product_name, product_description - product_images, product_price and store them in product table. 
